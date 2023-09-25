@@ -1,0 +1,34 @@
+<html>
+
+	<head>
+		<title>OddEven</title>
+	</head>
+	
+	<body>
+		
+		<form>
+			<b>Input a Number:</b><input type="text" id="num" onkeyup="result()"><br><br>
+			<p id="odev"></p>
+		</form>
+		
+	</body>
+	
+		<script type="text/javascript">
+			
+			function result(){
+			
+				var num=document.getElementById("num").value;
+				var rem=num%2;
+				
+				if (rem==0){
+					document.getElementById("odev").innerHTML="Even Number";
+					
+				} else {
+					document.getElementById("odev").innerHTML="Odd Number";
+					
+				}
+				
+			}
+		</script>
+		
+</html>
